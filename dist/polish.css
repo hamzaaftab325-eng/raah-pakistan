@@ -1,0 +1,193 @@
+/* Raah's shared editorial finish. The hero composition and flight canvas stay intact. */
+:root{--paper:#f5f3eb;--ink:#153a35;--muted:#61736b;--line:#193e3629;--accent:#b56d40}
+body{font-size:16px;line-height:1.65}
+.wrap{width:min(88%,1480px)}
+.section{padding:clamp(86px,9vw,150px) 0}
+h2{font-size:clamp(48px,5.4vw,92px);line-height:1.02;letter-spacing:-.068em}
+.copy{font-size:15px;line-height:1.8;max-width:460px}
+.eyebrow,.label{font-size:11px;letter-spacing:.2em;font-weight:600}
+.eyebrow{gap:15px;margin-bottom:32px}
+.eyebrow:before{width:23px;height:1px;border-radius:0;background:var(--accent)}
+.topline{margin-bottom:58px;gap:45px}
+.link{font-size:13px;font-weight:500;transition:gap .3s,color .3s}
+.link:hover{gap:47px;color:var(--accent)}
+.pill{font-size:13px;font-weight:500;min-height:50px;padding:15px 25px;gap:45px;justify-content:space-between;transition:background .35s,color .35s,transform .35s,box-shadow .35s}
+.pill:hover{transform:translateY(-3px);box-shadow:0 12px 25px #092d251c}
+
+/* Hero details are readable over each destination photograph. */
+.nav{top:30px}
+.nav-links{gap:clamp(22px,2.7vw,46px);font-size:13px;font-weight:500}
+.nav-links a{transition:opacity .25s,border-color .25s}
+.nav-links a:hover{opacity:.8}
+.nav-cta{font-size:12px;font-weight:500;padding:12px 20px;background:#092b2b2a;backdrop-filter:blur(14px);transition:background .3s,transform .3s}
+.nav-cta:hover{background:#fffdf7;color:var(--ink);transform:translateY(-2px)}
+.hero-content{bottom:clamp(245px,26vh,305px)}
+.hero h1{text-wrap:balance;text-shadow:0 2px 30px #082f2730}
+.hero-kicker{font-size:11px;font-weight:500}
+.hero-desc{font-size:15px;line-height:1.75;max-width:380px;color:#fffdf7e8}
+.hero-content .pill{min-width:235px;background:#0b302c30;backdrop-filter:blur(10px)}
+.hero-content .pill:hover{background:#fffdf7}
+.hero-right{bottom:clamp(280px,31vh,350px);width:235px;border-top-color:#fffdf780}
+.hero-right p{font-size:15px}
+.hero-right small{font-size:11px}
+.hero-place strong{font-size:25px}
+.hero-place small{font-size:11px}
+.flight-controls button{padding:7px 11px;font-size:10px;transition:background .3s,border-color .3s}
+.flight-controls button:hover{background:#fffdf7e8;color:var(--ink);border-color:#fffdf7}
+.hero-destination .floating-print{border-radius:12px;box-shadow:0 24px 46px #0016248c,0 3px 8px #00162466}
+.hero-destination .floating-print>span{font-size:13px;bottom:13px;left:14px;right:14px}
+
+/* A considered pause after the cinematic hero. */
+#intro{position:relative;background:radial-gradient(circle at 87% 10%,#e6e9de 0%,transparent 34%),var(--paper);padding-top:clamp(110px,11vw,180px)}
+.intro-grid{grid-template-columns:1.2fr .8fr;gap:12%;align-items:end}
+.intro-grid h2{max-width:770px}
+.intro-grid .copy{margin-top:34px}
+.intro-side{border-left:1px solid var(--line);padding-left:clamp(25px,4vw,65px);gap:28px}
+.intro-side p{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(24px,2.05vw,32px);font-weight:500;line-height:1.4;letter-spacing:-.03em;color:var(--ink)}
+.intro-bottom{margin-top:100px;padding-top:27px}
+.intro-bottom span{font-size:12px;color:#496057}
+.intro-bottom i{font-size:23px}
+
+/* Destination imagery carries the visual weight of the collection. */
+.section-destinations{padding-top:90px;background:#f8f7f2}
+.filters{gap:8px}
+.filter{font-size:12px;font-weight:500;padding:10px 16px;transition:background .3s,color .3s,border-color .3s}
+.filter:hover:not(.active){background:#e5ebe4;border-color:#9baea4}
+.destination-grid{gap:54px 25px}
+.dest-card{min-width:0}
+.dest-image{height:clamp(340px,31vw,480px);border-radius:15px;box-shadow:0 17px 35px #17383117;transition:transform .55s,box-shadow .55s}
+.dest-image:hover{box-shadow:0 25px 55px #17383130}
+.dest-image img{transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.dest-image:after{background:linear-gradient(180deg,#061c1d20,transparent 34%,#06262d36)}
+.dest-tag{top:19px;left:19px;font-size:10px;font-weight:600;letter-spacing:.08em;padding:8px 12px;background:#fffdf5ed}
+.save{right:18px;top:18px;width:37px;height:37px;font-size:21px;box-shadow:0 3px 12px #132f3233;transition:transform .25s,background .25s,color .25s}
+.save:hover{transform:scale(1.13)}
+.dest-meta{padding:19px 2px 0;align-items:center}
+.dest-meta h3{font-size:clamp(26px,2.3vw,35px);margin-bottom:4px}
+.dest-meta p{font-size:12px;letter-spacing:.02em}
+.dest-meta>span{height:36px;width:36px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;font-size:20px;transition:transform .3s,background .3s,color .3s}
+.dest-card:hover .dest-meta>span{transform:rotate(45deg);background:var(--ink);color:#fff}
+.photo-label{margin-top:32px;font-size:11px}
+.image-note{font-size:10px}
+
+/* Sample route: broad image, clear stops, restrained controls. */
+.route-section{background:#e7ece5}
+.route-layout{gap:clamp(50px,8vw,130px);grid-template-columns:1.05fr .95fr}
+.route-image{height:min(710px,60vw);min-height:530px;overflow:hidden;border-radius:18px;box-shadow:0 25px 65px #123c2c25}
+.route-image img{border-radius:18px;transition:transform 1.2s}
+.route-image:hover img{transform:scale(1.045)}
+.photo-caption{font-size:11px;bottom:26px;left:29px;letter-spacing:.06em}
+.route-tabs{gap:8px;border:0;margin:35px 0 12px}
+.route-tab{padding:11px 13px;text-align:center;border:1px solid var(--line);border-radius:50px;white-space:nowrap;font-size:11px;font-weight:500;transition:background .3s,color .3s}
+.route-tab.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.route-tab:hover:not(.active){background:#f6f7f2}
+.route-step{grid-template-columns:48px 1fr;padding:18px 0;gap:18px}
+.route-step small{font-size:11px;color:var(--accent);font-weight:600}
+.route-step h3{font-size:23px}
+.route-step p{font-size:13px;line-height:1.55}
+.route-foot{font-size:11px;line-height:1.7;margin:24px 0}
+
+/* A full-bleed interlude, followed by tactile editorial cards. */
+.photo-banner{height:clamp(620px,60vw,790px)}
+.photo-banner:after{background:linear-gradient(90deg,#082e34bf 0%,#082e3450 53%,#082e3411 100%),linear-gradient(0deg,#072b3155,transparent 40%)}
+.banner-content{padding-top:clamp(160px,16vw,225px)}
+.banner-content h2{font-size:clamp(60px,7vw,112px)}
+.banner-content p{font-size:16px;line-height:1.7;max-width:420px}
+.banner-caption{font-size:11px;letter-spacing:.08em}
+.experience-grid{gap:26px}
+.experience{position:relative;background:#fffdf8;border:1px solid #163e3013;border-radius:17px;padding:10px 10px 27px;box-shadow:0 14px 33px #1738310c;transition:transform .45s,box-shadow .45s}
+.experience:hover{transform:translateY(-8px);box-shadow:0 25px 46px #17383120}
+.experience img{width:100%;height:clamp(260px,22vw,350px);border-radius:10px;box-shadow:none;object-fit:cover}
+.experience h3,.experience p,.experience .label{margin-left:15px;margin-right:15px}
+.experience h3{font-size:clamp(28px,2.5vw,38px);margin-top:26px;margin-bottom:10px}
+.experience p{font-size:14px;line-height:1.65;max-width:360px}
+.experience .label{font-size:10px;font-weight:600;letter-spacing:.12em}
+
+/* The human side of travel. */
+#about{background:#eeefe8}
+.story-grid{gap:clamp(55px,10vw,155px)}
+.story-photo{height:660px}
+.story-photo>img{border-radius:18px;box-shadow:0 25px 65px #1738311f}
+.story-photo .small-photo{width:47%;height:270px;right:-30px;bottom:-35px;border:9px solid #eeefe8;border-radius:15px}
+.story-text p{font-size:16px;line-height:1.8;max-width:510px}
+.values{margin-top:40px}
+.value{font-size:14px;gap:24px;padding:18px 0}
+.value span{font-size:12px;font-weight:600}
+
+/* Field notes read as a distinct publication. */
+#journal{background:#f8f7f2}
+.journal-grid{gap:28px}
+.journal-card{border-radius:15px;overflow:hidden;background:#fffdf9;box-shadow:0 15px 38px #17383112;transition:transform .5s,box-shadow .5s}
+.journal-card:hover{transform:translateY(-9px);box-shadow:0 25px 48px #17383124}
+.journal-card img{height:clamp(250px,22vw,340px);border-radius:0;display:block;box-shadow:none}
+.journal-card .label,.journal-card h3,.journal-card .link{margin-left:25px;margin-right:25px}
+.journal-card .label{font-size:10px;letter-spacing:.12em;color:var(--accent);margin-top:25px}
+.journal-card h3{font-size:clamp(26px,2.3vw,34px);line-height:1.13;min-height:2.25em;margin-bottom:22px}
+.journal-card .link{font-size:12px;margin-bottom:25px}
+
+/* Practical details, then a warm photographic closing moment. */
+.faq-section{padding-top:clamp(95px,10vw,155px);padding-bottom:clamp(95px,10vw,155px)}
+.faq-grid{gap:12%;grid-template-columns:.85fr 1.15fr}
+.faq-grid details:first-child{border-top:1px solid var(--line)}
+details{padding:25px 0}
+summary{font-size:18px;font-weight:500;line-height:1.4;align-items:center}
+summary:after{width:32px;height:32px;display:grid;place-items:center;background:#e8ece6;border-radius:50%;font-size:20px;flex:none;transition:transform .3s,background .3s}
+details[open] summary:after{transform:rotate(180deg);background:#d7e0d7}
+details p{font-size:14px;line-height:1.8;margin:18px 55px 0 0}
+.planner-section{background:#123c38;padding-top:clamp(105px,10vw,160px)}
+.planner-bg{opacity:.58;object-position:50% 40%}
+.planner-section:before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,#092d2fc9 0%,#123e39b3 49%,#092d2fcb 100%);z-index:1}
+.planner-grid{gap:8%;align-items:start}
+.planner-grid h2{font-size:clamp(52px,6.5vw,105px)}
+.planner-grid .copy{font-size:16px;color:#fffdf7c9}
+.trip-form{padding:35px;background:#fffdf716;border:1px solid #fffdf740;border-radius:18px;backdrop-filter:blur(18px);box-shadow:0 25px 60px #041b2133;gap:26px 22px}
+.trip-form label{font-size:11px;font-weight:500;letter-spacing:.04em;color:#fffdf7d9}
+.trip-form select,.trip-form input{font-size:15px;padding:12px 0;border-bottom-color:#fffdf783}
+.trip-form button{font-size:13px;margin-top:5px}
+.planner-note{font-size:11px;line-height:1.6;color:#fffdf7bd;max-width:none}
+.plan-result{border-radius:10px;background:#092f2b8c;border-color:#fffdf74d;padding:24px;font-size:13px}
+.footer{margin-top:clamp(90px,10vw,150px);padding-top:31px;font-size:11px}
+.footer-links{gap:28px}
+.footer a:hover,.footer button:hover{color:#fff}
+.modal{border-radius:18px;box-shadow:0 25px 90px #051e1d7a}
+.modal img{border-radius:10px}
+
+@media(max-width:1100px){
+ .section{padding:85px 0}.hero h1{font-size:clamp(72px,8.5vw,110px)}
+ .hero-right{display:none}.intro-grid,.route-layout,.story-grid{gap:6%}
+ .intro-side p{font-size:25px}.route-tabs{flex-wrap:wrap}.route-tab{flex:1 1 30%;white-space:normal}
+ .route-image{min-height:520px}.dest-image{height:340px}.journal-card h3{min-height:3.2em}
+}
+@media(max-width:760px){
+ .wrap{width:90%}.section{padding:76px 0}h2{font-size:clamp(47px,10vw,67px)}
+ .eyebrow,.label{font-size:10px}.topline{margin-bottom:32px}
+ .nav{top:20px}.menu-button{display:grid;place-items:center;width:42px;height:42px;border:1px solid #fffdf780;border-radius:50%;font-size:20px;background:#082f2f40;backdrop-filter:blur(10px)}
+ .hero{height:max(930px,100svh)}.hero-content{bottom:290px}.hero h1{font-size:clamp(54px,12.6vw,88px)}
+ .hero-kicker{font-size:8px}.hero-desc{font-size:13px}.hero-content .pill{min-width:0}
+ .hero-destination .floating-print>span{font-size:10px;left:8px;right:8px;bottom:9px}
+ .hero-place strong{font-size:17px}.flight-controls{top:80px}
+ #intro{padding-top:95px}.intro-grid,.route-layout,.story-grid,.faq-grid,.planner-grid{grid-template-columns:1fr;gap:37px}
+ .intro-side{border-left:0;border-top:1px solid var(--line);padding:27px 0 0}.intro-side p{font-size:26px}
+ .intro-bottom{margin-top:48px;gap:18px}.intro-bottom span{font-size:12px}
+ .section-destinations{padding-top:76px}.filters{gap:7px}.filter{font-size:11px}
+ .destination-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 16px}.dest-image{height:clamp(220px,45vw,340px)}
+ .dest-tag{font-size:9px;top:12px;left:12px;padding:6px 9px}.save{width:30px;height:30px;right:11px;top:11px;font-size:18px}
+ .dest-meta h3{font-size:23px}.dest-meta p{font-size:10px}.dest-meta>span{width:28px;height:28px;font-size:16px}
+ .route-image{order:0;height:440px;min-height:0}.route-tabs{gap:6px;margin-top:23px}.route-tab{font-size:10px;padding:9px 8px}
+ .photo-banner{height:620px}.banner-content{padding-top:160px}.banner-content h2{font-size:clamp(56px,11vw,75px)}
+ .experience-grid{grid-template-columns:1fr;gap:22px}.experience img{height:320px}.experience h3{font-size:31px}
+ .story-photo{height:480px;width:94%;margin-bottom:26px}.story-photo .small-photo{height:180px;right:-20px;bottom:-24px;border-width:6px}
+ .journal-grid{grid-template-columns:1fr;gap:22px}.journal-card img{height:300px}.journal-card h3{min-height:0}
+ .faq-grid{gap:25px}.faq-section{padding-top:80px}summary{font-size:16px}details p{font-size:13px}
+ .planner-grid h2{font-size:clamp(54px,11vw,74px)}.trip-form{padding:24px;gap:21px 15px}
+ .footer{margin-top:80px}.footer-links{gap:18px}
+}
+@media(max-width:540px){
+ .hero h1{font-size:clamp(50px,12.6vw,68px)}.hero-content{bottom:300px}.hero-desc br{display:none}
+ .destination-grid{grid-template-columns:1fr;gap:34px}.dest-image{height:clamp(310px,78vw,430px)}
+ .dest-meta h3{font-size:28px}.dest-meta p{font-size:12px}
+ .experience img{height:clamp(265px,70vw,350px)}.route-image{height:360px}.journal-card img{height:260px}
+ .hero-place strong{font-size:16px}.trip-form{grid-template-columns:1fr}.trip-form .full{grid-column:auto}
+}
+@media(max-width:380px){.hero h1{font-size:50px}.hero-content{bottom:295px}.hero{height:900px}.hero-place strong{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.experience,.journal-card,.dest-meta>span,.route-image img{transition:none!important}}
